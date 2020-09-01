@@ -81,7 +81,7 @@ cp -rfv post_install.sh /mnt/root
 chmod a+x /mnt/root/post_install.sh
 
 # Chroot into new system
-echo "After chrooting into newly installed OS, please run the post_install.sh by executing ./post-install.sh"
+echo "After chrooting into newly installed OS, please run the post_ install.sh by executing ./post-install.sh"
 echo "Press any key to chroot..."
 read tmpvar
 arch-chroot /mnt /bin/bash
