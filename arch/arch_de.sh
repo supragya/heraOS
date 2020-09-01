@@ -1,5 +1,5 @@
 get_mate() {
-    sudo pacman -S mate mate-session-manager dolphin atril engrampa rofi mate-media blueman network-manager-applet mate-power-manager mate-tweak
+    pacman -S mate mate-session-manager dolphin atril engrampa rofi mate-media blueman network-manager-applet mate-power-manager mate-tweak
 }
 
 #
