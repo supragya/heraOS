@@ -29,6 +29,10 @@ setup_root_password() {
     passwd
 }
 
+setup_network_manager() {
+    systemctl enable NetworkManager.service
+}
+
 grub_setup() {
     grub-install --target=i386-pc /dev/sda
     grub-mkconfig -o /boot/grub/grub.cfg
@@ -52,6 +56,7 @@ locale
 network_config
 mkinitcpio
 setup_root_password
+setup_network_manager
 
 echo "---- Stage 2: Setting up bootloader"
 read breakpoint
