@@ -30,7 +30,9 @@ setup_root_password() {
 }
 
 setup_network_manager() {
+    pacman -S networkmanager
     systemctl enable NetworkManager.service
+    systemctl enable wpa_supplicant.service
 }
 
 grub_setup() {
