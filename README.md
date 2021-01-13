@@ -1,7 +1,9 @@
 # heraOS
 Personalised rice of Arch Linux
 
+## Take a backup using rsync
 ```
-sudo pacman -Sy git
-git clone https://github.com/supragya/heraOS.git
+sudo rsync -avzh --progress --stats / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} --ignore-errors /mnt/worklinux-backup/
 ```
+
+## Install arch linux using archfi
